@@ -25,6 +25,8 @@ website:
         href: index.html#data
       - text: "Methods"
         href: index.html#methods
+      - text: "मराठी"
+        href: https://pzaware19.github.io/delimitation-penalty-marathi/
   page-footer:
     center: "Piyush Zaware · Global Poverty Research Laboratory, Northwestern Kellogg / University of Chicago · Data: Census of India, National Commission on Population (2020), NFHS-5, ECI"
 
