@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "India’s Plan to Punish the States That Did Everything Right",
+    "section": "",
+    "text": "If India redraws its parliamentary map by population, the states losing seats are the ones that cut their birth rates, schooled their daughters, and grew richer. The states gaining are the ones that did not. This is what the data shows.\n\n\nPiyush Zaware · Northwestern Kellogg / University of Chicago\n\n\n\n543 Seats Frozen Since 1971\n\n\nSouth Loses 26\n\n\nUP +11 · Bihar +10\n\n\nr = −0.70\n\n\n4 Apportionment Methods"
+  },
+  {
+    "objectID": "index.html#defeat",
+    "href": "index.html#defeat",
+    "title": "India’s Plan to Punish the States That Did Everything Right",
+    "section": "The Defeat That Froze the Map",
+    "text": "The Defeat That Froze the Map\nIn a special session in April 2026, the government introduced three bills to settle one of the most consequential questions in Indian federalism: how to redraw the boundaries and the seat counts of the Lok Sabha after half a century of freeze. The centerpiece, the Constitution (131st Amendment) Bill, would have expanded the house from 543 seats to 850. It needed a two-thirds majority. It did not get one. The bills lapsed within two days.\nThe defeat settled nothing. It only postponed the reckoning and left the existing map in place: a map drawn on the 1971 census, when India had roughly 548 million people. The country now has more than 1.4 billion. The freeze was meant to be temporary, a way to reassure states that controlled their populations that they would not lose parliamentary weight for doing so. That promise has been extended again and again. Each extension makes the eventual correction larger and more explosive.\nThis piece does not take a side on whether the freeze should end. It asks a narrower, answerable question: if India does reapportion by population, who gains, who loses, and what do the losers have in common?"
+  },
+  {
+    "objectID": "index.html#frozen",
+    "href": "index.html#frozen",
+    "title": "India’s Plan to Punish the States That Did Everything Right",
+    "section": "The Map Is a 1971 Photograph",
+    "text": "The Map Is a 1971 Photograph\nStart with what the freeze has already produced. Because seats were fixed while populations kept changing, the number of people behind each seat now varies enormously from state to state.\n\n\n\nPopulation (2026 projection) per current Lok Sabha seat, by state. The dashed line is the national average. Northern states sit above it (under-represented); the South sits below (over-represented). Sources: NCP 2020 projections; current seat allocation.\n\n\nA voter in Rajasthan or Bihar today sits behind roughly 3.3 million people per seat. A voter in Kerala or Tamil Nadu sits behind closer to 1.8 million. That gap is not a plan or a policy. It is the mechanical residue of holding seats constant while some states grew faster than others. By the standard measure, about 8 percent of Lok Sabha representation is now misallocated relative to population, the equivalent of roughly 44 seats sitting in the wrong state.\nThis is the part both sides of the debate agree on. One person’s vote should carry roughly the same weight as another’s, and right now it does not. The disagreement begins when you ask how to fix it."
+  },
+  {
+    "objectID": "index.html#winners",
+    "href": "index.html#winners",
+    "title": "India’s Plan to Punish the States That Did Everything Right",
+    "section": "Who Gains, Who Loses",
+    "text": "Who Gains, Who Loses\nThe simplest fix, and the principle written into the defeated amendment, is to reallocate the existing 543 seats so that every seat holds roughly the same number of people. Here is what that does.\n\n\n\nProjected change in Lok Sabha seats if 543 seats are reapportioned by 2026 population (Webster method). Blue = Hindi-belt, red = South, grey = rest. Sources: computed from NCP 2020 projections.\n\n\nUttar Pradesh gains 11 seats. Bihar gains 10. Rajasthan gains 7 and Madhya Pradesh 5. On the other side, Tamil Nadu loses 10, Kerala 6, Andhra Pradesh 5, West Bengal and Odisha 4 each. The five southern states together lose 26 seats. Forty-one seats move in total.\nThere is nothing dishonest in this reapportionment. It is exactly what “one person, one vote” requires. A Tamil voter and a Bihari voter would, after it, carry the same weight in Delhi. The problem is what the map looks like once you notice which states are on which side."
+  },
+  {
+    "objectID": "index.html#penalty",
+    "href": "index.html#penalty",
+    "title": "India’s Plan to Punish the States That Did Everything Right",
+    "section": "The Performance Penalty",
+    "text": "The Performance Penalty\nHere is the uncomfortable pattern. Sort the states not by region but by how they performed on the goals that national development policy has pursued for fifty years: lower fertility, female education, rising incomes. The states that did best are the states that lose seats.\n\n\n\nEach major state’s projected seat change plotted against its fertility rate. Point size is population. Southern states (red) cluster at low fertility and seat loss; the Hindi-belt (blue) clusters at high fertility and seat gain. Sources: seat change computed (Webster) from NCP 2020 projections; TFR from NFHS-5.\n\n\nThe relationship is steep and clean. A state’s total fertility rate alone predicts its seat change with a correlation of +0.66: the more children per woman, the more seats it gains. Tamil Nadu and Kerala brought their fertility below replacement decades ago, ran some of India’s best public health and schooling systems, and sit at the bottom of the chart. Uttar Pradesh and Bihar, with the highest fertility and the weakest human development indicators, sit at the top.\nIt is not only fertility. The same pattern holds for female literacy.\n\n\n\nProjected seat change plotted against female literacy. The relationship runs the wrong way for fairness: the more a state educated its women, the more seats it stands to lose. Sources: seat change (Webster) from NCP 2020 projections; female literacy from Census 2011.\n\n\nCombine fertility, female literacy, and per-capita income into a single development index, and the correlation with seat change is −0.70. In a regression across the 21 major states, development explains 48 percent of the variation in seat change, and the relationship is significant at well below the one-in-a-thousand level. This is not a story about the South as a region. It is a story about performance. The states being asked to give up parliamentary voice are, almost exactly, the states that delivered what the country said it wanted.\n\n\n\n\n\n\nImportant\n\n\n\nWhy this is not just “the South complaining.” The southern states are over-represented today and a population-based correction would reduce that. That much is fair on its own terms. The deeper point is the incentive it sets. A state that lowers its fertility, educates its girls, and slows its population growth ends up with less national political power than a state that does none of those things. Whatever one thinks about the freeze, that is a strange thing for a country to reward."
+  },
+  {
+    "objectID": "index.html#robustness",
+    "href": "index.html#robustness",
+    "title": "India’s Plan to Punish the States That Did Everything Right",
+    "section": "It Is Not the Formula",
+    "text": "It Is Not the Formula\nOne natural objection: maybe this is an artifact of the particular apportionment method. Countries use different rules to turn population into seats, and the choice can favor large or small states at the margin. So we ran the reapportionment four ways: Webster (the standard, also used in recent think-tank analyses), Jefferson, Huntington-Hill (the method the United States uses for its House), and Hamilton.\n\n\n\nProjected seat change for the five southern states under four standard apportionment methods. The choice of mathematics changes almost nothing. Sources: methods computed from NCP 2020 projections.\n\n\nThe South loses the same 26 seats under all four. Tamil Nadu loses 10 in every method, Kerala 6, Andhra Pradesh 5. The reason is simple: the population gaps between states are so large that no reasonable rounding rule can bridge them. The result is driven by demography, not by the arithmetic chosen to express it."
+  },
+  {
+    "objectID": "index.html#federalism",
+    "href": "index.html#federalism",
+    "title": "India’s Plan to Punish the States That Did Everything Right",
+    "section": "The Trap With No Clean Exit",
+    "text": "The Trap With No Clean Exit\nIf reapportioning by population punishes the states that governed best, why not just expand the house so nobody loses a seat? That was the logic of the defeated 850-seat bill. It is the most tempting option and the most quietly dishonest.\nExpansion lets every state gain seats in absolute terms, which is why it is politically attractive. But share is what determines power, and in share terms expansion that preserves the current proportions simply freezes the 1971 distortion in a larger house. The South keeps its seats but watches its slice of a bigger pie shrink anyway, because the new seats are handed out in proportions set when India looked very different. Expansion does not resolve the tension. It hides it.\nThat is the trap. Every option on the table breaks something:\n\nReapportion by population and you penalize the states that did what was asked, and you concentrate national power in the Hindi-belt.\nExpand the house to protect seats and you entrench a half-century-old distortion while pretending to fix it.\nKeep the freeze and the malapportionment festers, with each passing year making the eventual correction larger and the gap between a vote in Bihar and a vote in Kerala wider.\n\n\nThere is no formula that makes this fair. The honest conclusion from the data is that delimitation in India is not a technical problem waiting for the right apportionment method. It is a values problem. The country has to decide what it is willing to trade between two principles it has long claimed to hold at once: that every vote should count equally, and that a federation should not punish its members for governing well. The April 2026 defeat did not resolve that choice. It deferred it."
+  },
+  {
+    "objectID": "index.html#data",
+    "href": "index.html#data",
+    "title": "India’s Plan to Punish the States That Did Everything Right",
+    "section": "The Data",
+    "text": "The Data\nThe analysis rests on public, official sources, and the numbers reconcile against known totals.\n\n\n\n\n\n\n\nSource\nWhat it provides\n\n\n\n\nCensus of India 2011\nState populations (base year)\n\n\nNational Commission on Population (2020)\nState population projections, 2026 and 2036\n\n\nElection Commission of India\nCurrent Lok Sabha seat allocation (543)\n\n\nNFHS-5 (2019-21)\nTotal fertility rate by state\n\n\nCensus 2011\nFemale literacy by state\n\n\nMOSPI / RBI\nPer-capita state income (approximate)\n\n\n\nThe population figures were extracted directly from the National Commission on Population’s 2020 report. As a check, the 36 state and union territory populations sum to 1.211 billion for 2011, matching the Census of India exactly, and Tamil Nadu’s projected growth matches the figure the report itself states.\n\n\n\n\n\n\nImportant\n\n\n\nThese are projections, not certainties. The 2026 and 2036 population figures are official projections made in 2020, before the delayed census. No actual delimitation has occurred or can occur until fresh census data exists. Everything here describes what reapportionment on the best available population estimates would do, not what will certainly happen."
+  },
+  {
+    "objectID": "index.html#methods",
+    "href": "index.html#methods",
+    "title": "India’s Plan to Punish the States That Did Everything Right",
+    "section": "Methods",
+    "text": "Methods\nApportionment. Seats are allocated to states by population under four standard methods, each implemented from first principles: Webster (Sainte-Lague), Jefferson (D’Hondt), Huntington-Hill (the US House method), and Hamilton (largest remainder). Every state is guaranteed at least one seat. The headline figures use Webster, the most widely used standard and the method behind recent independent analyses.\nThe performance penalty. Projected seat change is regressed on total fertility rate and on a composite development index, built from the z-scores of negative fertility, female literacy, and log per-capita income. The regression covers the 21 major states (current seats of four or more), so that the smallest union territories, which keep one seat mechanically, do not distort the relationship. The correlation between the development index and seat change is −0.70, significant at p = 0.0003, with an R-squared of 0.48.\nA full series-by-series provenance audit is in the project repository. The compiled dataset and all code are available on request.\n\nRelated reading\n\nCarnegie Endowment for International Peace, “Delimitation After Defeat: India’s Unfinished Debate Over Representation” (2026), the most thorough recent analysis of the scenarios and the malapportionment math.\nNational Commission on Population, Population Projections for India and States 2011-2036 (2020)."
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "India’s Plan to Punish the States That Did Everything Right",
+    "section": "About",
+    "text": "About\nPiyush Zaware is a researcher at the Global Poverty Research Laboratory, Northwestern Kellogg School of Management, and a doctoral student in economics at the University of Chicago. He works on political economy, public finance, and state capacity in India.\npiyushz@uchicago.edu"
+  },
+  {
+    "objectID": "output/reports/DATA_PROVENANCE.html",
+    "href": "output/reports/DATA_PROVENANCE.html",
+    "title": "Data Provenance: Delimitation 2026 Analysis",
+    "section": "",
+    "text": "Author: Piyush Zaware Last updated: 2026-06-20\nEvery series, its source, and its reliability. Same three-tier scheme as the farmer-suicides project.\n\n\n\n\n\n\n\n\n\nSeries\nTier\nSource\nVerification\n\n\n\n\nState population 2011\nA\nCensus of India 2011\nSum across 36 states/UTs = 1,211,127 thousand, matches India 2011 census (1.21 billion) exactly\n\n\nState population 2026, 2036\nA\nNational Commission on Population, Population Projections for India and States 2011-2036 (2020), Table 8/21, total persons, ’000\nExtracted directly from the report PDF. Tamil Nadu 2011-36 growth (+8%) matches the report’s own stated figure; every 2011 value matches census\n\n\nCurrent Lok Sabha seats\nA\nElection Commission of India / Lok Sabha\nSum = 543 elected seats; verified by hand\n\n\nTotal Fertility Rate\nA\nNFHS-5 (2019-21) state fact sheets\nStandard published values\n\n\nFemale literacy\nA\nCensus 2011\nStandard published values\n\n\nPer-capita NSDP\nC\nMOSPI / RBI Handbook of Statistics on Indian States (approx, 2011-12 constant)\nApproximate, used only for relative ranking in the composite development index. Not a headline number\n\n\n\n\n\n\nApportionment: four standard methods implemented from first principles in code/A2_apportion.R: Webster/Sainte-Lague (the standard, also used by Carnegie 2026), Jefferson/D’Hondt, Huntington-Hill (US House), Hamilton/largest remainder. Every state guaranteed at least one seat. Verified: the five southern states lose 26 seats combined under all four methods, matching independent estimates (e.g., P. Chidambaram’s “South loses 26”).\nPerformance-penalty regression: OLS of projected seat change on TFR and on a composite development index (z-scores of negative TFR, female literacy, log per-capita NSDP), restricted to 21 major states (current seats &gt;= 4) so that min-1-seat UTs do not add mechanical zeros. Result: corr(development index, seat change) = -0.70, p = 0.0003, R-squared = 0.48.\n\n\n\n\n\nProjections, not certainties. 2026 and 2036 figures are NCP projections from 2020, made before the 2021 census (which has not been conducted). They are the best official numbers available but are projections.\nThe 2021 census has not happened. Any actual delimitation would use fresh census data that does not yet exist. This analysis uses NCP projections as the best proxy.\nSeat counts assume each state keeps &gt;= 1 seat and that delimitation reallocates by population alone, the principle in the (defeated) Constitution 131st Amendment Bill, 2026.\nPer-capita NSDP is approximate and enters only the composite index, not any headline number. The TFR and literacy results (Tier A) carry the argument.\n\n\n\n\n\nReplace NSDP approximations with exact MOSPI state domestic product series.\nAdd the 848-seat expansion scenario’s effect on vote share (not just absolute seats) to show expansion does not protect the South’s relative voice.\nProject the Samuels-Snyder malapportionment index forward to 2041."
+  },
+  {
+    "objectID": "output/reports/DATA_PROVENANCE.html#method-provenance",
+    "href": "output/reports/DATA_PROVENANCE.html#method-provenance",
+    "title": "Data Provenance: Delimitation 2026 Analysis",
+    "section": "",
+    "text": "Apportionment: four standard methods implemented from first principles in code/A2_apportion.R: Webster/Sainte-Lague (the standard, also used by Carnegie 2026), Jefferson/D’Hondt, Huntington-Hill (US House), Hamilton/largest remainder. Every state guaranteed at least one seat. Verified: the five southern states lose 26 seats combined under all four methods, matching independent estimates (e.g., P. Chidambaram’s “South loses 26”).\nPerformance-penalty regression: OLS of projected seat change on TFR and on a composite development index (z-scores of negative TFR, female literacy, log per-capita NSDP), restricted to 21 major states (current seats &gt;= 4) so that min-1-seat UTs do not add mechanical zeros. Result: corr(development index, seat change) = -0.70, p = 0.0003, R-squared = 0.48."
+  },
+  {
+    "objectID": "output/reports/DATA_PROVENANCE.html#key-caveats-to-state-in-the-piece",
+    "href": "output/reports/DATA_PROVENANCE.html#key-caveats-to-state-in-the-piece",
+    "title": "Data Provenance: Delimitation 2026 Analysis",
+    "section": "",
+    "text": "Projections, not certainties. 2026 and 2036 figures are NCP projections from 2020, made before the 2021 census (which has not been conducted). They are the best official numbers available but are projections.\nThe 2021 census has not happened. Any actual delimitation would use fresh census data that does not yet exist. This analysis uses NCP projections as the best proxy.\nSeat counts assume each state keeps &gt;= 1 seat and that delimitation reallocates by population alone, the principle in the (defeated) Constitution 131st Amendment Bill, 2026.\nPer-capita NSDP is approximate and enters only the composite index, not any headline number. The TFR and literacy results (Tier A) carry the argument."
+  },
+  {
+    "objectID": "output/reports/DATA_PROVENANCE.html#what-would-strengthen-this-for-a-fuller-paper",
+    "href": "output/reports/DATA_PROVENANCE.html#what-would-strengthen-this-for-a-fuller-paper",
+    "title": "Data Provenance: Delimitation 2026 Analysis",
+    "section": "",
+    "text": "Replace NSDP approximations with exact MOSPI state domestic product series.\nAdd the 848-seat expansion scenario’s effect on vote share (not just absolute seats) to show expansion does not protect the South’s relative voice.\nProject the Samuels-Snyder malapportionment index forward to 2041."
+  }
+]

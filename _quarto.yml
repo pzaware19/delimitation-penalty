@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "The Delimitation Penalty"
+  navbar:
+    left:
+      - text: "The Defeat"
+        href: index.html#defeat
+      - text: "Frozen Map"
+        href: index.html#frozen
+      - text: "Winners & Losers"
+        href: index.html#winners
+      - text: "The Penalty"
+        href: index.html#penalty
+      - text: "Robustness"
+        href: index.html#robustness
+      - text: "Federalism"
+        href: index.html#federalism
+    right:
+      - text: "Data"
+        href: index.html#data
+      - text: "Methods"
+        href: index.html#methods
+  page-footer:
+    center: "Piyush Zaware · Global Poverty Research Laboratory, Northwestern Kellogg / University of Chicago · Data: Census of India, National Commission on Population (2020), NFHS-5, ECI"
+
+format:
+  html:
+    theme:
+      light: [flatly, custom.scss]
+    toc: true
+    toc-location: right
+    toc-title: "Contents"
+    toc-depth: 2
+    smooth-scroll: true
+    fig-align: center
+    fig-cap-location: bottom
+    number-sections: false
+    link-external-newwindow: true

@@ -1,0 +1,10 @@
+# Large source PDF (re-downloadable from NCP) and extracted text
+input/NCP_Population_Projection_2019.pdf
+input/NCP_full.txt
+input/ncp_parsed.json
+
+# R / system
+.Rhistory
+.RData
+.DS_Store
+tmp/*.rds

@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The Delimitation Penalty</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-7840cd7981757219aa83ed7bc847dc4c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">The Delimitation Penalty</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#defeat"> 
+<span class="menu-text">The Defeat</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#frozen"> 
+<span class="menu-text">Frozen Map</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#winners"> 
+<span class="menu-text">Winners &amp; Losers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#penalty"> 
+<span class="menu-text">The Penalty</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#robustness"> 
+<span class="menu-text">Robustness</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#federalism"> 
+<span class="menu-text">Federalism</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#data"> 
+<span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html#methods"> 
+<span class="menu-text">Methods</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#defeat" id="toc-defeat" class="nav-link active" data-scroll-target="#defeat">The Defeat That Froze the Map</a></li>
+  <li><a href="#frozen" id="toc-frozen" class="nav-link" data-scroll-target="#frozen">The Map Is a 1971 Photograph</a></li>
+  <li><a href="#winners" id="toc-winners" class="nav-link" data-scroll-target="#winners">Who Gains, Who Loses</a></li>
+  <li><a href="#penalty" id="toc-penalty" class="nav-link" data-scroll-target="#penalty">The Performance Penalty</a></li>
+  <li><a href="#robustness" id="toc-robustness" class="nav-link" data-scroll-target="#robustness">It Is Not the Formula</a></li>
+  <li><a href="#federalism" id="toc-federalism" class="nav-link" data-scroll-target="#federalism">The Trap With No Clean Exit</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">The Data</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#about" id="toc-about" class="nav-link" data-scroll-target="#about">About</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<div class="hero">
+<p><img src="output/figures/fig_hero.png" class="hero-img img-fluid"></p>
+<section id="indias-plan-to-punish-the-states-that-did-everything-right" class="level1">
+<h1>India’s Plan to Punish the States That Did Everything Right</h1>
+<div class="subtitle">
+<p>If India redraws its parliamentary map by population, the states losing seats are the ones that cut their birth rates, schooled their daughters, and grew richer. The states gaining are the ones that did not. This is what the data shows.</p>
+</div>
+<div class="meta">
+<p>Piyush Zaware · Northwestern Kellogg / University of Chicago</p>
+</div>
+<div class="badge-row">
+<div class="badge-item">
+<p>543 Seats Frozen Since 1971</p>
+</div>
+<div class="badge-item south">
+<p>South Loses 26</p>
+</div>
+<div class="badge-item">
+<p>UP +11 · Bihar +10</p>
+</div>
+<div class="badge-item">
+<p>r = −0.70</p>
+</div>
+<div class="badge-item">
+<p>4 Apportionment Methods</p>
+</div>
+</div>
+</section>
+</div>
+<div class="lead-para">
+<p>Every dot in the image above is one Lok Sabha seat that would move if India reallocated its parliament by population. The red columns falling on the left are the southern and eastern states. The blue columns rising on the right are the Hindi-belt. The wave runs in one direction, and it is not random. The states on the losing side share something: they are the ones that did what national policy asked of them.</p>
+</div>
+<div class="abstract-box">
+<p><strong>Four findings from the data</strong></p>
+<ol type="1">
+<li><p><strong>The map is frozen on a 1971 photograph.</strong> Lok Sabha seats have not been reallocated across states for over five decades. Each member of parliament now represents about 2.7 million people on average, the highest ratio in any democracy on earth.</p></li>
+<li><p><strong>Reallocation by population shifts power north.</strong> If the 543 seats were reapportioned on 2026 population, Uttar Pradesh would gain 11 seats and Bihar 10, while Tamil Nadu would lose 10 and Kerala 6. The five southern states lose 26 seats combined.</p></li>
+<li><p><strong>The states losing seats are the ones that governed best.</strong> Across the 21 major states, the correlation between a state’s development record and its projected seat change is −0.70. Lower fertility, higher female literacy, and higher income all predict losing seats. Development explains nearly half the variation in who wins and loses.</p></li>
+<li><p><strong>It is not an artifact of the formula.</strong> The South loses the same 26 seats under all four standard apportionment methods. The result is about demography, not arithmetic.</p></li>
+</ol>
+</div>
+<div class="stat-row">
+  <div class="stat"><div class="stat-num">2.7M</div><div class="stat-label">people per MP<br>(highest on earth)</div></div>
+  <div class="stat"><div class="stat-num red">−26</div><div class="stat-label">southern seats<br>(all four methods)</div></div>
+  <div class="stat"><div class="stat-num">−0.70</div><div class="stat-label">development vs<br>seat change</div></div>
+  <div class="stat"><div class="stat-num">55</div><div class="stat-label">years since the<br>last reapportionment</div></div>
+</div>
+<section id="defeat" class="level2">
+<h2 class="anchored" data-anchor-id="defeat">The Defeat That Froze the Map</h2>
+<p>In a special session in April 2026, the government introduced three bills to settle one of the most consequential questions in Indian federalism: how to redraw the boundaries and the seat counts of the Lok Sabha after half a century of freeze. The centerpiece, the Constitution (131st Amendment) Bill, would have expanded the house from 543 seats to 850. It needed a two-thirds majority. It did not get one. The bills lapsed within two days.</p>
+<p>The defeat settled nothing. It only postponed the reckoning and left the existing map in place: a map drawn on the 1971 census, when India had roughly 548 million people. The country now has more than 1.4 billion. The freeze was meant to be temporary, a way to reassure states that controlled their populations that they would not lose parliamentary weight for doing so. That promise has been extended again and again. Each extension makes the eventual correction larger and more explosive.</p>
+<p>This piece does not take a side on whether the freeze should end. It asks a narrower, answerable question: if India does reapportion by population, who gains, who loses, and what do the losers have in common?</p>
+</section>
+<section id="frozen" class="level2">
+<h2 class="anchored" data-anchor-id="frozen">The Map Is a 1971 Photograph</h2>
+<p>Start with what the freeze has already produced. Because seats were fixed while populations kept changing, the number of people behind each seat now varies enormously from state to state.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/figures/fig_malapportionment.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Population (2026 projection) per current Lok Sabha seat, by state. The dashed line is the national average. Northern states sit above it (under-represented); the South sits below (over-represented). Sources: NCP 2020 projections; current seat allocation.</figcaption>
+</figure>
+</div>
+<p>A voter in Rajasthan or Bihar today sits behind roughly 3.3 million people per seat. A voter in Kerala or Tamil Nadu sits behind closer to 1.8 million. That gap is not a plan or a policy. It is the mechanical residue of holding seats constant while some states grew faster than others. By the standard measure, about 8 percent of Lok Sabha representation is now misallocated relative to population, the equivalent of roughly 44 seats sitting in the wrong state.</p>
+<p>This is the part both sides of the debate agree on. One person’s vote should carry roughly the same weight as another’s, and right now it does not. The disagreement begins when you ask how to fix it.</p>
+</section>
+<section id="winners" class="level2">
+<h2 class="anchored" data-anchor-id="winners">Who Gains, Who Loses</h2>
+<p>The simplest fix, and the principle written into the defeated amendment, is to reallocate the existing 543 seats so that every seat holds roughly the same number of people. Here is what that does.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/figures/fig_seat_change.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Projected change in Lok Sabha seats if 543 seats are reapportioned by 2026 population (Webster method). Blue = Hindi-belt, red = South, grey = rest. Sources: computed from NCP 2020 projections.</figcaption>
+</figure>
+</div>
+<p>Uttar Pradesh gains 11 seats. Bihar gains 10. Rajasthan gains 7 and Madhya Pradesh 5. On the other side, Tamil Nadu loses 10, Kerala 6, Andhra Pradesh 5, West Bengal and Odisha 4 each. The five southern states together lose 26 seats. Forty-one seats move in total.</p>
+<p>There is nothing dishonest in this reapportionment. It is exactly what “one person, one vote” requires. A Tamil voter and a Bihari voter would, after it, carry the same weight in Delhi. The problem is what the map looks like once you notice which states are on which side.</p>
+</section>
+<section id="penalty" class="level2">
+<h2 class="anchored" data-anchor-id="penalty">The Performance Penalty</h2>
+<p>Here is the uncomfortable pattern. Sort the states not by region but by how they performed on the goals that national development policy has pursued for fifty years: lower fertility, female education, rising incomes. The states that did best are the states that lose seats.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/figures/fig_penalty_scatter.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Each major state’s projected seat change plotted against its fertility rate. Point size is population. Southern states (red) cluster at low fertility and seat loss; the Hindi-belt (blue) clusters at high fertility and seat gain. Sources: seat change computed (Webster) from NCP 2020 projections; TFR from NFHS-5.</figcaption>
+</figure>
+</div>
+<p>The relationship is steep and clean. A state’s total fertility rate alone predicts its seat change with a correlation of +0.66: the more children per woman, the more seats it gains. Tamil Nadu and Kerala brought their fertility below replacement decades ago, ran some of India’s best public health and schooling systems, and sit at the bottom of the chart. Uttar Pradesh and Bihar, with the highest fertility and the weakest human development indicators, sit at the top.</p>
+<p>It is not only fertility. The same pattern holds for female literacy.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/figures/fig_penalty_literacy.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Projected seat change plotted against female literacy. The relationship runs the wrong way for fairness: the more a state educated its women, the more seats it stands to lose. Sources: seat change (Webster) from NCP 2020 projections; female literacy from Census 2011.</figcaption>
+</figure>
+</div>
+<p>Combine fertility, female literacy, and per-capita income into a single development index, and the correlation with seat change is <strong>−0.70</strong>. In a regression across the 21 major states, development explains 48 percent of the variation in seat change, and the relationship is significant at well below the one-in-a-thousand level. This is not a story about the South as a region. It is a story about performance. The states being asked to give up parliamentary voice are, almost exactly, the states that delivered what the country said it wanted.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Why this is not just “the South complaining.”</strong> The southern states are over-represented today and a population-based correction would reduce that. That much is fair on its own terms. The deeper point is the incentive it sets. A state that lowers its fertility, educates its girls, and slows its population growth ends up with less national political power than a state that does none of those things. Whatever one thinks about the freeze, that is a strange thing for a country to reward.</p>
+</div>
+</div>
+</section>
+<section id="robustness" class="level2">
+<h2 class="anchored" data-anchor-id="robustness">It Is Not the Formula</h2>
+<p>One natural objection: maybe this is an artifact of the particular apportionment method. Countries use different rules to turn population into seats, and the choice can favor large or small states at the margin. So we ran the reapportionment four ways: Webster (the standard, also used in recent think-tank analyses), Jefferson, Huntington-Hill (the method the United States uses for its House), and Hamilton.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/figures/fig_formula_robustness.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Projected seat change for the five southern states under four standard apportionment methods. The choice of mathematics changes almost nothing. Sources: methods computed from NCP 2020 projections.</figcaption>
+</figure>
+</div>
+<p>The South loses the same 26 seats under all four. Tamil Nadu loses 10 in every method, Kerala 6, Andhra Pradesh 5. The reason is simple: the population gaps between states are so large that no reasonable rounding rule can bridge them. The result is driven by demography, not by the arithmetic chosen to express it.</p>
+</section>
+<section id="federalism" class="level2">
+<h2 class="anchored" data-anchor-id="federalism">The Trap With No Clean Exit</h2>
+<p>If reapportioning by population punishes the states that governed best, why not just expand the house so nobody loses a seat? That was the logic of the defeated 850-seat bill. It is the most tempting option and the most quietly dishonest.</p>
+<p>Expansion lets every state gain seats in absolute terms, which is why it is politically attractive. But share is what determines power, and in share terms expansion that preserves the current proportions simply freezes the 1971 distortion in a larger house. The South keeps its seats but watches its slice of a bigger pie shrink anyway, because the new seats are handed out in proportions set when India looked very different. Expansion does not resolve the tension. It hides it.</p>
+<p>That is the trap. Every option on the table breaks something:</p>
+<ul>
+<li><strong>Reapportion by population</strong> and you penalize the states that did what was asked, and you concentrate national power in the Hindi-belt.</li>
+<li><strong>Expand the house to protect seats</strong> and you entrench a half-century-old distortion while pretending to fix it.</li>
+<li><strong>Keep the freeze</strong> and the malapportionment festers, with each passing year making the eventual correction larger and the gap between a vote in Bihar and a vote in Kerala wider.</li>
+</ul>
+<div class="verdict-box">
+<p><strong>There is no formula that makes this fair.</strong> The honest conclusion from the data is that delimitation in India is not a technical problem waiting for the right apportionment method. It is a values problem. The country has to decide what it is willing to trade between two principles it has long claimed to hold at once: that every vote should count equally, and that a federation should not punish its members for governing well. The April 2026 defeat did not resolve that choice. It deferred it.</p>
+</div>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">The Data</h2>
+<p>The analysis rests on public, official sources, and the numbers reconcile against known totals.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 69%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>What it provides</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Census of India 2011</td>
+<td>State populations (base year)</td>
+</tr>
+<tr class="even">
+<td>National Commission on Population (2020)</td>
+<td>State population projections, 2026 and 2036</td>
+</tr>
+<tr class="odd">
+<td>Election Commission of India</td>
+<td>Current Lok Sabha seat allocation (543)</td>
+</tr>
+<tr class="even">
+<td>NFHS-5 (2019-21)</td>
+<td>Total fertility rate by state</td>
+</tr>
+<tr class="odd">
+<td>Census 2011</td>
+<td>Female literacy by state</td>
+</tr>
+<tr class="even">
+<td>MOSPI / RBI</td>
+<td>Per-capita state income (approximate)</td>
+</tr>
+</tbody>
+</table>
+<p>The population figures were extracted directly from the National Commission on Population’s 2020 report. As a check, the 36 state and union territory populations sum to 1.211 billion for 2011, matching the Census of India exactly, and Tamil Nadu’s projected growth matches the figure the report itself states.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>These are projections, not certainties.</strong> The 2026 and 2036 population figures are official projections made in 2020, before the delayed census. No actual delimitation has occurred or can occur until fresh census data exists. Everything here describes what reapportionment on the best available population estimates would do, not what will certainly happen.</p>
+</div>
+</div>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p><strong>Apportionment.</strong> Seats are allocated to states by population under four standard methods, each implemented from first principles: Webster (Sainte-Lague), Jefferson (D’Hondt), Huntington-Hill (the US House method), and Hamilton (largest remainder). Every state is guaranteed at least one seat. The headline figures use Webster, the most widely used standard and the method behind recent independent analyses.</p>
+<p><strong>The performance penalty.</strong> Projected seat change is regressed on total fertility rate and on a composite development index, built from the z-scores of negative fertility, female literacy, and log per-capita income. The regression covers the 21 major states (current seats of four or more), so that the smallest union territories, which keep one seat mechanically, do not distort the relationship. The correlation between the development index and seat change is −0.70, significant at p = 0.0003, with an R-squared of 0.48.</p>
+<p>A full series-by-series provenance audit is in the project repository. The compiled dataset and all code are available on request.</p>
+<section id="related-reading" class="level3">
+<h3 class="anchored" data-anchor-id="related-reading">Related reading</h3>
+<ul>
+<li>Carnegie Endowment for International Peace, “Delimitation After Defeat: India’s Unfinished Debate Over Representation” (2026), the most thorough recent analysis of the scenarios and the malapportionment math.</li>
+<li>National Commission on Population, <em>Population Projections for India and States 2011-2036</em> (2020).</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="about" class="level2">
+<h2 class="anchored" data-anchor-id="about">About</h2>
+<p><strong>Piyush Zaware</strong> is a researcher at the Global Poverty Research Laboratory, Northwestern Kellogg School of Management, and a doctoral student in economics at the University of Chicago. He works on political economy, public finance, and state capacity in India.</p>
+<p><a href="mailto:piyushz@uchicago.edu">piyushz@uchicago.edu</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Piyush Zaware · Global Poverty Research Laboratory, Northwestern Kellogg / University of Chicago · Data: Census of India, National Commission on Population (2020), NFHS-5, ECI</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
