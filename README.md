@@ -2,7 +2,7 @@
 
 A data-driven analysis of India's 2026 delimitation debate: the states set to lose Lok Sabha seats under population-based reapportionment are, almost exactly, the states that did best on the development goals national policy has pursued for fifty years.
 
-**Live site:** (GitHub Pages, once published)
+**Live site:** https://pzaware19.github.io/delimitation-penalty/
 
 ## The finding
 
