@@ -8,3 +8,6 @@ input/ncp_parsed.json
 .RData
 .DS_Store
 tmp/*.rds
+
+/.quarto/
+**/*.quarto_ipynb

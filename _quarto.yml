@@ -16,6 +16,8 @@ website:
         href: index.html#penalty
       - text: "Robustness"
         href: index.html#robustness
+      - text: "Double Penalty"
+        href: index.html#double
       - text: "Federalism"
         href: index.html#federalism
     right:

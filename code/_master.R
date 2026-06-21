@@ -16,4 +16,6 @@ TMPDIR <- file.path(root, "tmp")
 
 source(file.path(CODDIR, "A1_collect.R"))
 source(file.path(CODDIR, "A2_apportion.R"))
+source(file.path(CODDIR, "A3_fiscal.R"))
 source(file.path(CODDIR, "C1_figures.R"))
+source(file.path(CODDIR, "C2_figures.R"))

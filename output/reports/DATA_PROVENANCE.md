@@ -13,6 +13,7 @@ Every series, its source, and its reliability. Same three-tier scheme as the far
 | Total Fertility Rate | **A** | NFHS-5 (2019-21) state fact sheets | Standard published values |
 | Female literacy | **A** | Census 2011 | Standard published values |
 | Per-capita NSDP | **C** | MOSPI / RBI Handbook of Statistics on Indian States (approx, 2011-12 constant) | Approximate, used only for relative ranking in the composite development index. Not a headline number |
+| Tax-devolution shares (14th, 15th FC) | **A** | PRS Legislative Research, from the official 15th Finance Commission report, Table 2 | Official inter-se shares. Rupee conversion uses the 15th FC states' pool (~Rs 42.2 lakh crore, 2021-26) |
 
 ## Method provenance
 

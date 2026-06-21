@@ -113,6 +113,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Robustness</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./index.html#double"> 
+<span class="menu-text">Double Penalty</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./index.html#federalism"> 
 <span class="menu-text">Federalism</span></a>
   </li>  
@@ -147,6 +151,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#winners" id="toc-winners" class="nav-link" data-scroll-target="#winners">Who Gains, Who Loses</a></li>
   <li><a href="#penalty" id="toc-penalty" class="nav-link" data-scroll-target="#penalty">The Performance Penalty</a></li>
   <li><a href="#robustness" id="toc-robustness" class="nav-link" data-scroll-target="#robustness">It Is Not the Formula</a></li>
+  <li><a href="#double" id="toc-double" class="nav-link" data-scroll-target="#double">The Penalty Is Double: Seats and Money</a></li>
   <li><a href="#federalism" id="toc-federalism" class="nav-link" data-scroll-target="#federalism">The Trap With No Clean Exit</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">The Data</a></li>
   <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
@@ -165,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="indias-plan-to-punish-the-states-that-did-everything-right" class="level1">
 <h1>India’s Plan to Punish the States That Did Everything Right</h1>
 <div class="subtitle">
-<p>If India redraws its parliamentary map by population, the states losing seats are the ones that cut their birth rates, schooled their daughters, and grew richer. The states gaining are the ones that did not. This is what the data shows.</p>
+<p>If India redraws its parliamentary map by population, the states losing seats are the ones that cut their birth rates, schooled their daughters, and grew richer. The same states already lost money when the Finance Commission switched to a newer census. The penalty for governing well is double.</p>
 </div>
 <div class="meta">
 <p>Piyush Zaware · Northwestern Kellogg / University of Chicago</p>
@@ -198,14 +203,14 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>The map is frozen on a 1971 photograph.</strong> Lok Sabha seats have not been reallocated across states for over five decades. Each member of parliament now represents about 2.7 million people on average, the highest ratio in any democracy on earth.</p></li>
 <li><p><strong>Reallocation by population shifts power north.</strong> If the 543 seats were reapportioned on 2026 population, Uttar Pradesh would gain 11 seats and Bihar 10, while Tamil Nadu would lose 10 and Kerala 6. The five southern states lose 26 seats combined.</p></li>
 <li><p><strong>The states losing seats are the ones that governed best.</strong> Across the 21 major states, the correlation between a state’s development record and its projected seat change is −0.70. Lower fertility, higher female literacy, and higher income all predict losing seats. Development explains nearly half the variation in who wins and loses.</p></li>
-<li><p><strong>It is not an artifact of the formula.</strong> The South loses the same 26 seats under all four standard apportionment methods. The result is about demography, not arithmetic.</p></li>
+<li><p><strong>The penalty is double.</strong> The same states that lose seats also lost fiscal share when the 15th Finance Commission switched from a 1971 to a 2011 population baseline. The five southern states give up roughly Rs 92,000 crore over 2021 to 2026, on top of 26 seats. The same demographic success is penalized twice, once in voice and once in money.</p></li>
 </ol>
 </div>
 <div class="stat-row">
-  <div class="stat"><div class="stat-num">2.7M</div><div class="stat-label">people per MP<br>(highest on earth)</div></div>
   <div class="stat"><div class="stat-num red">−26</div><div class="stat-label">southern seats<br>(all four methods)</div></div>
+  <div class="stat"><div class="stat-num red">₹92,000cr</div><div class="stat-label">southern fiscal loss<br>(15th Finance Commission)</div></div>
   <div class="stat"><div class="stat-num">−0.70</div><div class="stat-label">development vs<br>seat change</div></div>
-  <div class="stat"><div class="stat-num">55</div><div class="stat-label">years since the<br>last reapportionment</div></div>
+  <div class="stat"><div class="stat-num">2.7M</div><div class="stat-label">people per MP<br>(highest on earth)</div></div>
 </div>
 <section id="defeat" class="level2">
 <h2 class="anchored" data-anchor-id="defeat">The Defeat That Froze the Map</h2>
@@ -280,6 +285,32 @@ Important
 </div>
 <p>The South loses the same 26 seats under all four. Tamil Nadu loses 10 in every method, Kerala 6, Andhra Pradesh 5. The reason is simple: the population gaps between states are so large that no reasonable rounding rule can bridge them. The result is driven by demography, not by the arithmetic chosen to express it.</p>
 </section>
+<section id="double" class="level2">
+<h2 class="anchored" data-anchor-id="double">The Penalty Is Double: Seats and Money</h2>
+<section id="the-same-states-lose-at-the-finance-commission-too" class="level3">
+<h3 class="anchored" data-anchor-id="the-same-states-lose-at-the-finance-commission-too">The same states lose at the Finance Commission too</h3>
+<p>So far this has been a story about seats. But parliamentary voice is not the only thing India allocates by population. Every five years the Finance Commission decides how the central tax pool is divided among the states, and in 2021 the Fifteenth Finance Commission changed its formula in exactly the way delimitation would: it dropped the 1971 population baseline and used the 2011 population instead. The effect was the same, and it fell on the same states.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/figures/fig_double_penalty.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Projected Lok Sabha seat change plotted against the change in tax-devolution share between the 14th and 15th Finance Commissions. The southern states fall in the bottom-left quadrant: they lose both. Sources: seat change from NCP 2020 projections (Webster); devolution shares from PRS / 15th Finance Commission report.</figcaption>
+</figure>
+</div>
+<p>Put each state’s seat change on one axis and its fiscal-share change on the other, and the southern states drop into the corner that loses both. Karnataka’s devolution share fell by a full percentage point, from 4.71 to 3.65. Kerala’s fell from 2.50 to 1.93. Andhra Pradesh and Telangana lost ground too. Across the five southern states the loss is about 2.2 percentage points of the divisible pool, which over the 2021 to 2026 award period works out to roughly <strong>Rs 92,000 crore</strong>.</p>
+<p>The same demographic success that costs these states seats also costs them money. Both penalties run through one mechanism: the move from a 1971 population baseline to a 2011 one, which rewards the states that grew fastest.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="output/figures/fig_fiscal_slope.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>State share of the tax-devolution pool, 14th to 15th Finance Commission. The southern states (red) fall; the large northern states (blue) rise. Source: PRS / 15th Finance Commission report, Table 2.</figcaption>
+</figure>
+</div>
+</section>
+<section id="one-honest-complication" class="level3">
+<h3 class="anchored" data-anchor-id="one-honest-complication">One honest complication</h3>
+<p>The fiscal penalty is real, but it is softer than the seat penalty, and the reason matters. The Finance Commission formula has an equity component: through the “income distance” criterion it sends more to poorer states, and that cushion partly offsets the population effect. Delimitation has no such cushion. Seats are allocated on population alone. That is why Tamil Nadu, which loses 10 seats, actually gained a sliver of fiscal share. It is large, and by the income-distance measure it gets some protection that the seat formula does not offer.</p>
+<p>The deeper point survives the complication. The instrument that allocates political power, seats, is pure population, and it punishes the South hardest. The instrument that allocates money, devolution, is population softened by equity, so it punishes the South less. But the direction is the same on both, and the same five states sit on the losing side of each.</p>
+</section>
+</section>
 <section id="federalism" class="level2">
 <h2 class="anchored" data-anchor-id="federalism">The Trap With No Clean Exit</h2>
 <p>If reapportioning by population punishes the states that governed best, why not just expand the house so nobody loses a seat? That was the logic of the defeated 850-seat bill. It is the most tempting option and the most quietly dishonest.</p>
@@ -333,6 +364,10 @@ Important
 <td>MOSPI / RBI</td>
 <td>Per-capita state income (approximate)</td>
 </tr>
+<tr class="odd">
+<td>PRS / 15th Finance Commission report</td>
+<td>Tax-devolution shares, 14th and 15th FC</td>
+</tr>
 </tbody>
 </table>
 <p>The population figures were extracted directly from the National Commission on Population’s 2020 report. As a check, the 36 state and union territory populations sum to 1.211 billion for 2011, matching the Census of India exactly, and Tamil Nadu’s projected growth matches the figure the report itself states.</p>
@@ -354,6 +389,7 @@ Important
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
 <p><strong>Apportionment.</strong> Seats are allocated to states by population under four standard methods, each implemented from first principles: Webster (Sainte-Lague), Jefferson (D’Hondt), Huntington-Hill (the US House method), and Hamilton (largest remainder). Every state is guaranteed at least one seat. The headline figures use Webster, the most widely used standard and the method behind recent independent analyses.</p>
 <p><strong>The performance penalty.</strong> Projected seat change is regressed on total fertility rate and on a composite development index, built from the z-scores of negative fertility, female literacy, and log per-capita income. The regression covers the 21 major states (current seats of four or more), so that the smallest union territories, which keep one seat mechanically, do not distort the relationship. The correlation between the development index and seat change is −0.70, significant at p = 0.0003, with an R-squared of 0.48.</p>
+<p><strong>The double penalty.</strong> Tax-devolution shares are the official inter-se shares from the 14th and 15th Finance Commissions (PRS, from the 15th FC report, Table 2). The rupee figure uses the 15th FC states’ pool of about Rs 42.2 lakh crore over 2021 to 2026, so one percentage point of share is roughly Rs 42,200 crore. The seat penalty and the fiscal penalty move together (correlation +0.41). The development-fiscal correlation is weaker than the development-seat correlation, because the Finance Commission formula contains an equity (income-distance) component that partly cushions poorer states, while seat allocation does not.</p>
 <p>A full series-by-series provenance audit is in the project repository. The compiled dataset and all code are available on request.</p>
 <section id="related-reading" class="level3">
 <h3 class="anchored" data-anchor-id="related-reading">Related reading</h3>
