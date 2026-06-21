@@ -44,7 +44,7 @@ Every dot in the image above is one Lok Sabha seat that would move if India real
 ::: {.abstract-box}
 **Four findings from the data**
 
-1. **The map is frozen on a 1971 photograph.** Lok Sabha seats have not been reallocated across states for over five decades. Each member of parliament now represents about 2.7 million people on average, the highest ratio in any democracy on earth.
+1. **The map is frozen on a 1971 photograph.** Lok Sabha seats have not been reallocated across states for over five decades. Each member of parliament now represents about 2.6 million people on average, among the highest of any major democracy on earth.
 
 2. **Reallocation by population shifts power north.** If the 543 seats were reapportioned on 2026 population, Uttar Pradesh would gain 11 seats and Bihar 10, while Tamil Nadu would lose 10 and Kerala 6. The five southern states lose 26 seats combined.
 
@@ -58,7 +58,7 @@ Every dot in the image above is one Lok Sabha seat that would move if India real
   <div class="stat"><div class="stat-num red">−26</div><div class="stat-label">southern seats<br>(all four methods)</div></div>
   <div class="stat"><div class="stat-num red">₹92,000cr</div><div class="stat-label">southern fiscal loss<br>(15th Finance Commission)</div></div>
   <div class="stat"><div class="stat-num">−0.70</div><div class="stat-label">development vs<br>seat change</div></div>
-  <div class="stat"><div class="stat-num">2.7M</div><div class="stat-label">people per MP<br>(highest on earth)</div></div>
+  <div class="stat"><div class="stat-num">2.6M</div><div class="stat-label">people per MP<br>(among highest anywhere)</div></div>
 </div>
 ```
 
@@ -76,7 +76,7 @@ Start with what the freeze has already produced. Because seats were fixed while 
 
 ![Population (2026 projection) per current Lok Sabha seat, by state. The dashed line is the national average. Northern states sit above it (under-represented); the South sits below (over-represented). Sources: NCP 2020 projections; current seat allocation.](output/figures/fig_malapportionment.png){width=100%}
 
-A voter in Rajasthan or Bihar today sits behind roughly 3.3 million people per seat. A voter in Kerala or Tamil Nadu sits behind closer to 1.8 million. That gap is not a plan or a policy. It is the mechanical residue of holding seats constant while some states grew faster than others. By the standard measure, about 8 percent of Lok Sabha representation is now misallocated relative to population, the equivalent of roughly 44 seats sitting in the wrong state.
+A voter in Rajasthan or Bihar today sits behind roughly 3.3 million people per seat. A voter in Kerala sits behind about 1.8 million, and in Tamil Nadu about 2 million. That gap is not a plan or a policy. It is the mechanical residue of holding seats constant while some states grew faster than others. By the standard measure of malapportionment, about 8.5 percent of Lok Sabha representation is now out of place relative to population, the equivalent of roughly 46 seats sitting in the wrong state.
 
 This is the part both sides of the debate agree on. One person's vote should carry roughly the same weight as another's, and right now it does not. The disagreement begins when you ask how to fix it.
 
@@ -176,7 +176,11 @@ The population figures were extracted directly from the National Commission on P
 
 **Apportionment.** Seats are allocated to states by population under four standard methods, each implemented from first principles: Webster (Sainte-Lague), Jefferson (D'Hondt), Huntington-Hill (the US House method), and Hamilton (largest remainder). Every state is guaranteed at least one seat. The headline figures use Webster, the most widely used standard and the method behind recent independent analyses.
 
-**The performance penalty.** Projected seat change is regressed on total fertility rate and on a composite development index, built from the z-scores of negative fertility, female literacy, and log per-capita income. The regression covers the 21 major states (current seats of four or more), so that the smallest union territories, which keep one seat mechanically, do not distort the relationship. The correlation between the development index and seat change is −0.70, significant at p = 0.0003, with an R-squared of 0.48.
+**The performance penalty.** Projected seat change is regressed on total fertility rate and on a composite development index, built from the z-scores of negative fertility, female literacy, and log per-capita income. The regression covers the 21 major states (current seats of four or more), so that the smallest union territories, which keep one seat mechanically, do not distort the relationship. The correlation between the development index and seat change is −0.70, significant at p = 0.0003, with an R-squared of 0.48. The result is robust: it holds when Tamil Nadu, the single largest loser, is dropped (−0.72), and the outlier-resistant rank (Spearman) correlation is −0.52. One honest caveat: part of this relationship is the demographic transition working through arithmetic, since lower fertility means slower population growth and seats track population. The contribution here is to measure the size of the penalty, not to claim it is surprising.
+
+**Malapportionment.** The "out of place" figure (8.5 percent, about 46 seats) is computed directly as one half of the sum of absolute differences between each state's seat share and its population share, the standard malapportionment index.
+
+**Validation.** The apportionment engine reproduces independently published estimates: run on 2011 population, it returns the same seat changes reported by PRS Legislative Research for the 2026 Delimitation Bill (Uttar Pradesh +9, Bihar +6, Rajasthan +5, Tamil Nadu −7, Kerala −5).
 
 **The double penalty.** Tax-devolution shares are the official inter-se shares from the 14th and 15th Finance Commissions (PRS, from the 15th FC report, Table 2). The rupee figure uses the 15th FC states' pool of about Rs 42.2 lakh crore over 2021 to 2026, so one percentage point of share is roughly Rs 42,200 crore. The seat penalty and the fiscal penalty move together (correlation +0.41). The development-fiscal correlation is weaker than the development-seat correlation, because the Finance Commission formula contains an equity (income-distance) component that partly cushions poorer states, while seat allocation does not.
 
