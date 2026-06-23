@@ -18,6 +18,8 @@ website:
         href: index.html#robustness
       - text: "Double Penalty"
         href: index.html#double
+      - text: "Gerrymander"
+        href: index.html#gerrymander
       - text: "Federalism"
         href: index.html#federalism
     right:
